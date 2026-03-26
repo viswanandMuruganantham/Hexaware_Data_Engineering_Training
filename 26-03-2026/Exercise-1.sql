@@ -114,7 +114,7 @@ SELECT
 FROM employees e
 LEFT JOIN projects p
 ON e.emp_id = p.emp_id
-GROUP BY e.emp_name;
+GROUP BY e.emp_id, e.emp_name;
 
 SELECT 
     e.department,
