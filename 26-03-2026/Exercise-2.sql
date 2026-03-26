@@ -59,9 +59,7 @@ SELECT
 FROM students s
 LEFT JOIN enrollments e
 ON s.student_id = e.student_id
-
 UNION
-
 SELECT 
     s.student_name,
     e.course_name
