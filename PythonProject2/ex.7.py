@@ -1,0 +1,9 @@
+products = {
+"Laptop":75000,
+"Mobile":30000,
+"Tablet":25000
+}
+
+for item in products:
+    products[item] = products[item] *1.10
+print(products)
