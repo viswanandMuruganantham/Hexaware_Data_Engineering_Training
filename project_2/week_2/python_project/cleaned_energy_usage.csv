@@ -1,0 +1,5 @@
+timestamp,room_id,device_name,energy_kwh
+2026-05-01 10:00:00,1,Air Conditioner,5.5
+2026-05-01 11:00:00,2,Refrigerator,2.1
+2026-05-01 12:00:00,1,LED TV,1.2
+2026-05-01 13:00:00,3,Fan,0.8

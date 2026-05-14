@@ -1,0 +1,23 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.11'
+
+- script: |
+    pip install pandas numpy pyspark
+  displayName: 'Install Dependencies'
+
+- script: |
+    python energy_analysis.py
+  displayName: 'Run Energy Analysis'
+
+- script: |
+    echo "Energy report generated successfully"
+  displayName: 'Completion Message'
